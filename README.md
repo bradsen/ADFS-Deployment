@@ -43,11 +43,32 @@ Let’s add it to the RPT by entering the following lines of PowerShell, below t
 ```
 Set-AdfsRelyingPartyTrust -Targetname "Microsoft 365 Identity Platform" -IssuanceAuthorizationRules ' => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
 ```
+Source: [Creating Microsoft Office 365 identity platform relying party trust manually](https://dirteam.com/sander/2019/06/04/creating-the-microsoft-office-365-identity-platform-relying-party-trust-manually/)
 
 ## Microsoft Entra Connect Sync
 Initiates an interactive authentication process
+
 Go to *C:\Program Files\Microsoft Azure Active Directory Connect*
 ```
 AzureADConnect.exe /InteractiveAuth
+```
+```
+Set-item WSMan:\localhost\Client\TrustedHosts -Value ' ip-10-0-6-57.ap-northeast-3.compute.internal' -Force -Concatenate
+```
+
+## Web Application Proxy configuration
+
+Enable WinRM
+
+Powershell
+
+```
+Enable-PSRemoting -force 
+```
+```
+Set-item WSMan:\localhost\Client\TrustedHosts -Value (hostname of entra connect server)
+```
+```
+Restart-service -name winrm
 ```
  
