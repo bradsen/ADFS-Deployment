@@ -53,7 +53,7 @@ Go to *C:\Program Files\Microsoft Azure Active Directory Connect*
 AzureADConnect.exe /InteractiveAuth
 ```
 ```
-Set-item WSMan:\localhost\Client\TrustedHosts -Value ' ip-10-0-6-57.ap-northeast-3.compute.internal' -Force -Concatenate
+Set-item WSMan:\localhost\Client\TrustedHosts -Value '(hostname of WAP server)' -Force -Concatenate
 ```
 
 ## Web Application Proxy configuration
