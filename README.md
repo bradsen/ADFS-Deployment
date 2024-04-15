@@ -17,6 +17,33 @@ Metadata page
 ```
 https://(ADFS domain)/federationmetadata/2007-06/federationmetadata.xml
 ```
+### Add relying party trust (Microsoft 365 identity platform)
+Import ADFS module
+```
+Import-Module ADFS
+```
+```
+Add-AdfsRelyingPartyTrust -Name "Microsoft 365 Identity Platform" –MetadataUrl https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml
+```
+With the above steps, many of the settings are configured perfectly for the Relying Party Trust. However, we need to set three more settings to make it perfect.
+The first setting defines the additional WS-Fed Endpoints for the RPT. The other two settings enable monitoring of the RPT and automatic updating.
+Enter the following lines of PowerShell, below the earlier ones to configure the settings:
+```
+$AdditionalWSFedEndpoint = @(
+  "https://ccs.login.microsoftonline.com/ccs/login.srf"
+  "https://ccs-sdf.login.microsoftonline.com/ccs/login.srf"
+  "https://stamp2.login.microsoftonline.com/login.srf"
+  )
+```
+```
+Set-AdfsRelyingPartyTrust -TargetName "Microsoft 365 Identity Platform" -AdditionalWSFedEndpoint $AdditionalWSFedEndpoint -AutoUpdateEnabled $true -MonitoringEnabled $true
+```
+One of the other features of the Microsoft Office 365 Identity Platform RPT, is the default claims issuance authorization rule.
+Let’s add it to the RPT by entering the following lines of PowerShell, below the earlier ones:
+```
+Set-AdfsRelyingPartyTrust -Targetname "Microsoft 365 Identity Platform" -IssuanceAuthorizationRules ' => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
+```
+
 ## Microsoft Entra Connect Sync
 Initiates an interactive authentication process
 Go to *C:\Program Files\Microsoft Azure Active Directory Connect*
