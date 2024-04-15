@@ -17,3 +17,10 @@ Metadata page
 ```
 https://(ADFS domain)/federationmetadata/2007-06/federationmetadata.xml
 ```
+## Microsoft Entra Connect Sync
+Initiates an interactive authentication process
+Go to *C:\Program Files\Microsoft Azure Active Directory Connect*
+```
+AzureADConnect.exe /InteractiveAuth
+```
+ 
