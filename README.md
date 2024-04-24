@@ -1,6 +1,13 @@
-# Hybrid 
+# Hybrid Identity with Federated Authentication (Part 1)
+[Choose the right authentication method for your Microsoft Entra hybrid identity solution](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/choose-ad-authn)
 
-# ADFS-Deployment
+# Bastion Host Setup (Part 2)
+
+# Deploy Servers (Part 3)
+
+# Configure AD (Part 4)
+
+# ADFS-Deployment (Part 5)
 
 Commands that I used in the deployment
 
@@ -47,21 +54,7 @@ Set-AdfsRelyingPartyTrust -Targetname "Microsoft 365 Identity Platform" -Issuanc
 ```
 Source: [Creating Microsoft Office 365 identity platform relying party trust manually](https://dirteam.com/sander/2019/06/04/creating-the-microsoft-office-365-identity-platform-relying-party-trust-manually/)
 
-## Microsoft Entra Connect Sync
-Initiates an interactive authentication process
-
-Go to *C:\Program Files\Microsoft Azure Active Directory Connect*
-```
-AzureADConnect.exe /InteractiveAuth
-```
-```
-Set-item WSMan:\localhost\Client\TrustedHosts -Value '(hostname of WAP server)' -Force -Concatenate
-```
-Other references:
-
-[Download Microsoft Entra Connect (Method 01)](https://www.microsoft.com/en-us/download/details.aspx?id=47594)
-
-## Web Application Proxy configuration
+# Web Application Proxy configuration (Part 6)
 
 Enable WinRM
 
@@ -76,4 +69,18 @@ Set-item WSMan:\localhost\Client\TrustedHosts -Value (hostname of entra connect 
 ```
 Restart-service -name winrm
 ```
+# Microsoft Entra Connect Sync (Part 7)
+Initiates an interactive authentication process
+
+Go to *C:\Program Files\Microsoft Azure Active Directory Connect*
+```
+AzureADConnect.exe /InteractiveAuth
+```
+```
+Set-item WSMan:\localhost\Client\TrustedHosts -Value '(hostname of WAP server)' -Force -Concatenate
+```
+Other references:
+
+[Download Microsoft Entra Connect (Method 01)](https://www.microsoft.com/en-us/download/details.aspx?id=47594)
+
  
