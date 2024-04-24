@@ -1,3 +1,5 @@
+# Hybrid 
+
 # ADFS-Deployment
 
 Commands that I used in the deployment
@@ -55,6 +57,9 @@ AzureADConnect.exe /InteractiveAuth
 ```
 Set-item WSMan:\localhost\Client\TrustedHosts -Value '(hostname of WAP server)' -Force -Concatenate
 ```
+Other references:
+
+[Download Microsoft Entra Connect (Method 01)](https://www.microsoft.com/en-us/download/details.aspx?id=47594)
 
 ## Web Application Proxy configuration
 
