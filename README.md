@@ -72,6 +72,10 @@ Set-item WSMan:\localhost\Client\TrustedHosts -Value (hostname of entra connect 
 ```
 Restart-service -name winrm
 ```
+Resources:
+[Install and Configure the Web Application Proxy Server](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383662(v=ws.11))
+[Install federation proxy server](https://www.youtube.com/watch?v=N5idLsbI3W0)
+
 # Microsoft Entra Connect Sync (Part 7)
 Initiates an interactive authentication process
 
