@@ -89,8 +89,9 @@ Set-item WSMan:\localhost\Client\TrustedHosts -Value '(hostname of WAP server)' 
 ```
 Resources:<br>
 [Download Microsoft Entra Connect (Method 01)](https://www.microsoft.com/en-us/download/details.aspx?id=47594)<br>
-[Stop Synchronization service manager](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-feature-scheduler)<br>
-[Run Entra Connect with interactive authentication-Troubleshoot 2](https://blog.matrixpost.net/azure-ad-connect-unable-to-validate-credentials-due-to-an-unexpected-error/)<br>
+[Stop Synchronization service manager (Troubleshoot 1)](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-feature-scheduler)<br>
+[Unable to connect to synchronization service](https://supertekboy.com/2017/01/01/unable-to-connect-to-the-synchronization-service/)<br>
+[Run Entra Connect with interactive authentication (Troubleshoot 2)](https://blog.matrixpost.net/azure-ad-connect-unable-to-validate-credentials-due-to-an-unexpected-error/)<br>
 [Free SSL certificate](https://zerossl.com/)
 
  
