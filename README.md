@@ -1,12 +1,6 @@
 # Hybrid Identity with Federated Authentication (Part 1)
 [Choose the right authentication method for your Microsoft Entra hybrid identity solution](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/choose-ad-authn)
 
-# Bastion Host Setup (Part 2)
-
-# Deploy Servers (Part 3)
-
-# Configure AD (Part 4)
-
 # ADFS-Deployment (Part 5)
 
 Commands that I used in the deployment
