@@ -52,7 +52,8 @@ Set-AdfsRelyingPartyTrust -Targetname "Microsoft 365 Identity Platform" -Issuanc
 Resources: <br>
 [Creating Microsoft Office 365 identity platform relying party trust manually](https://dirteam.com/sander/2019/06/04/creating-the-microsoft-office-365-identity-platform-relying-party-trust-manually/)<br>
 [Install ADFS role service](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/install-the-ad-fs-role-service)<br>
-[Install the Certificate Authority](https://learn.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority)
+[Install the Certificate Authority](https://learn.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority)<br>
+[Obtain and Configure an SSL Certificate for AD FS](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn781428(v=ws.11))
 
 # Web Application Proxy configuration (Part 6)
 
