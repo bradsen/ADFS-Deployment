@@ -1,5 +1,5 @@
 # Hybrid Identity with Federated Authentication (Part 1)
-References:
+Resources:
 
 [Choose the right authentication method for your Microsoft Entra hybrid identity solution](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/choose-ad-authn)
 
@@ -52,7 +52,7 @@ Let’s add it to the RPT by entering the following lines of PowerShell, below t
 ```
 Set-AdfsRelyingPartyTrust -Targetname "Microsoft 365 Identity Platform" -IssuanceAuthorizationRules ' => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
 ```
-Source: 
+Resources: 
 [Creating Microsoft Office 365 identity platform relying party trust manually](https://dirteam.com/sander/2019/06/04/creating-the-microsoft-office-365-identity-platform-relying-party-trust-manually/)
 
 # Web Application Proxy configuration (Part 6)
@@ -80,7 +80,7 @@ AzureADConnect.exe /InteractiveAuth
 ```
 Set-item WSMan:\localhost\Client\TrustedHosts -Value '(hostname of WAP server)' -Force -Concatenate
 ```
-Other references:
+Resources:
 
 [Download Microsoft Entra Connect (Method 01)](https://www.microsoft.com/en-us/download/details.aspx?id=47594)
 [Free SSL certificate](https://zerossl.com/)
