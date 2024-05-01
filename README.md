@@ -50,10 +50,10 @@ Let’s add it to the RPT by entering the following lines of PowerShell, below t
 Set-AdfsRelyingPartyTrust -Targetname "Microsoft 365 Identity Platform" -IssuanceAuthorizationRules ' => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
 ```
 Resources: <br>
-[Configure a Federation server](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/configure-a-federation-server)
+[Configure a Federation server](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/configure-a-federation-server)<br>
 [Install ADFS role service](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/install-the-ad-fs-role-service)<br>
 [Install the Certificate Authority](https://learn.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority)<br>
-[Obtain and Configure an SSL Certificate for AD FS](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn781428(v=ws.11))
+[Obtain and Configure an SSL Certificate for AD FS](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn781428(v=ws.11))<br>
 [Creating Microsoft Office 365 identity platform relying party trust manually](https://dirteam.com/sander/2019/06/04/creating-the-microsoft-office-365-identity-platform-relying-party-trust-manually/)<br>
 
 # Web Application Proxy configuration (Part 6)
