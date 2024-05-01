@@ -1,4 +1,6 @@
 # Hybrid Identity with Federated Authentication (Part 1)
+References:
+
 [Choose the right authentication method for your Microsoft Entra hybrid identity solution](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/choose-ad-authn)
 
 [Add your custom domain - Microsoft Entra](https://learn.microsoft.com/en-us/entra/fundamentals/add-custom-domain)
