@@ -92,6 +92,7 @@ Resources:<br>
 [Stop Synchronization service manager (Troubleshoot 1)](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-feature-scheduler)<br>
 [Unable to connect to synchronization service](https://supertekboy.com/2017/01/01/unable-to-connect-to-the-synchronization-service/)<br>
 [Run Entra Connect with interactive authentication (Troubleshoot 2)](https://blog.matrixpost.net/azure-ad-connect-unable-to-validate-credentials-due-to-an-unexpected-error/)<br>
+[How to Enable/Test PowerShell Remoting on Windows Host](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0813330#:~:text=The%20first%20step%20to%20enable,open%20PowerShell%20with%20administrative%20privileges.&text=This%20command%20starts%20the%20WinRM,rule%20that%20allows%20incoming%20connections.)<br>
 [Free SSL certificate](https://zerossl.com/)
 
  
