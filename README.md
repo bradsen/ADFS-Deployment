@@ -55,6 +55,7 @@ Resources: <br>
 [Install the Certificate Authority](https://learn.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority)<br>
 [Obtain and Configure an SSL Certificate for AD FS](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn781428(v=ws.11))<br>
 [Creating Microsoft Office 365 identity platform relying party trust manually](https://dirteam.com/sander/2019/06/04/creating-the-microsoft-office-365-identity-platform-relying-party-trust-manually/)<br>
+[Enable the Idp-initiated sign on page](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/troubleshooting/ad-fs-tshoot-initiatedsignon)
 
 # Web Application Proxy configuration (Part 6)
 
